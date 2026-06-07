@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="sw">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swahili_web — Discover</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/scripte.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="index.html">
+        <img src="../images/logo.png" alt="Swahili_web logo" class="brand-logo">
+        <span class="brand-text">Swahili_web</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="discover.html" class="active">Discover</a>
+        <a href="jifunze.html">Jifunze</a>
+        <a href="communit.html">Community</a>
+        <a href="upload.html">Upload</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn btn-ghost" id="loginBtn">Login</button>
+        <button class="btn btn-primary" id="registerBtn">Register</button>
+        <button class="mobile-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main container">
+    <section class="page-header">
+      <div>
+        <p class="eyebrow">Gundua methali, misemo, nukuu na vidokezo</p>
+        <h1>Gundua</h1>
+        <p>Tafuta methali, misemo na maarifa ya Kiswahili kwa ajili ya kujifunza na kushirikiana.</p>
+      </div>
+      <button class="btn btn-primary">Jisajili Sasa</button>
+    </section>
+
+    <section class="search-panel">
+      <input type="search" placeholder="Tafuta methali, misemo, nukuu..." aria-label="Search quotes">
+      <div class="tag-list">
+        <button class="tag active" data-filter="all">Zote</button>
+        <button class="tag" data-filter="methali">Methali</button>
+        <button class="tag" data-filter="misemo">Misemo</button>
+        <button class="tag" data-filter="nukuu">Nukuu za Kiislamu</button>
+        <button class="tag" data-filter="elimu">Elimu</button>
+        <button class="tag" data-filter="historia">Historia</button>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <div class="main-feed">
+        <article class="feed-card card-item" data-category="methali" data-cardid="card-1">
+          <div class="card-top">
+            <span class="chip">Methali</span>
+            <div class="card-actions-small"><button class="icon like" data-count="12">♡ <span class="count">12</span></button><button class="icon comment" data-count="3" data-comment>💬 <span class="count">3</span></button><button class="icon share" data-share>⤴</button></div>
+          </div>
+          <h2>Asiyesikia la mkuu huvunjika guu</h2>
+          <p>Ongea kwa busara na sikiliza walio mbele yako kabla ya kuchukua hatua.</p>
+          <div class="meta-row"><span>12 likes</span><span class="meta-comments">3 comments</span><span>Share</span></div>
+        </article>
+        <article class="feed-card card-item" data-category="misemo" data-cardid="card-2">
+          <div class="card-top">
+            <span class="chip">Misemo</span>
+            <div class="card-actions-small"><button class="icon like" data-count="19">♡ <span class="count">19</span></button><button class="icon comment" data-count="5" data-comment>💬 <span class="count">5</span></button><button class="icon share" data-share>⤴</button></div>
+          </div>
+          <h2>Ukitaka kamasi, nesema msimamo kwa busara</h2>
+          <p>Misemo inakuweka karibu na umuhimu wa maneno yaliyofikiriwa vizuri.</p>
+          <div class="meta-row"><span>19 likes</span><span class="meta-comments">5 comments</span><span>Share</span></div>
+        </article>
+        <article class="feed-card card-item" data-category="nukuu" data-cardid="card-3">
+          <div class="card-top">
+            <span class="chip">Nukuu za Kiislamu</span>
+            <div class="card-actions-small"><button class="icon like" data-count="16">♡ <span class="count">16</span></button><button class="icon comment" data-count="4" data-comment>💬 <span class="count">4</span></button><button class="icon share" data-share>⤴</button></div>
+          </div>
+          <h2>Fanya kila mema kwa moyo safi, subiri kwa subira.</h2>
+          <p>Uislamu unafundisha uvumilivu, tabia njema na maarifa ya maisha.</p>
+          <div class="meta-row"><span>16 likes</span><span class="meta-comments">4 comments</span><span>Share</span></div>
+        </article>
+        <article class="feed-card card-item" data-category="elimu" data-cardid="card-4">
+          <div class="card-top">
+            <span class="chip">Elimu</span>
+            <div class="card-actions-small"><button class="icon like" data-count="23">♡ <span class="count">23</span></button><button class="icon comment" data-count="6" data-comment>💬 <span class="count">6</span></button><button class="icon share" data-share>⤴</button></div>
+          </div>
+          <h2>Neno moja la hekima lina thamani zaidi ya hazina.</h2>
+          <p>Elimu ni msingi wa mafanikio, hasa ile inayotokana na lugha na tamaduni.</p>
+          <div class="meta-row"><span>23 likes</span><span class="meta-comments">6 comments</span><span>Share</span></div>
+        </article>
+        <article class="feed-card card-item" data-category="historia" data-cardid="card-5">
+          <div class="card-top">
+            <span class="chip">Historia</span>
+            <div class="card-actions-small"><button class="icon like" data-count="18">♡ <span class="count">18</span></button><button class="icon comment" data-count="8" data-comment>💬 <span class="count">8</span></button><button class="icon share" data-share>⤴</button></div>
+          </div>
+          <h2>Kibabu cha wazee kilikuwa kitovu wa hekima za kijiji.</h2>
+          <p>Wazee walikusanya methali na hadithi za kumbukumbu kuelezea historia ya jamii.</p>
+          <div class="meta-row"><span>18 likes</span><span class="meta-comments">8 comments</span><span>Share</span></div>
+        </article>
+        <article class="feed-card card-item" data-category="historia" data-cardid="card-6">
+          <div class="card-top">
+            <span class="chip">Historia</span>
+            <div class="card-actions-small"><button class="icon like" data-count="21">♡ <span class="count">21</span></button><button class="icon comment" data-count="7" data-comment>💬 <span class="count">7</span></button><button class="icon share" data-share>⤴</button></div>
+          </div>
+          <h2>Karibu na bahari, wanamazingira walifundisha wasichana kusisimua hadithi.</h2>
+          <p>Miji ya pwani yalihifadhi simulizi kuhusu miji ya zamani, biashara na vikao vya kihistoria.</p>
+          <div class="meta-row"><span>21 likes</span><span class="meta-comments">7 comments</span><span>Share</span></div>
+        </article>
+        <article class="feed-card card-item" data-category="historia" data-cardid="card-7">
+          <div class="card-top">
+            <span class="chip">Historia</span>
+            <div class="card-actions-small"><button class="icon like" data-count="14">♡ <span class="count">14</span></button><button class="icon comment" data-count="2" data-comment>💬 <span class="count">2</span></button><button class="icon share" data-share>⤴</button></div>
+          </div>
+          <h2>Uzi wa maziwa na chai uliunganishwa na biashara za kale za Kiswahili.</h2>
+          <p>Baadhi ya methali zilizotumika katika masoko ya Kiarabu bado zinahifadhiwa leo.</p>
+          <div class="meta-row"><span>14 likes</span><span class="meta-comments">2 comments</span><span>Share</span></div>
+        </article>
+        <article class="feed-card card-item" data-category="historia" data-cardid="card-8">
+          <div class="card-top">
+            <span class="chip">Historia</span>
+            <div class="card-actions-small"><button class="icon like" data-count="27">♡ <span class="count">27</span></button><button class="icon comment" data-count="10" data-comment>💬 <span class="count">10</span></button><button class="icon share" data-share>⤴</button></div>
+          </div>
+          <h2>Bahari ya Hindi ilikuwa njia ya maarifa na habari za kale.</h2>
+          <p>Wasafiri wa kale walibeba methali na hekima za Kiswahili katika mabaharia yao.</p>
+          <div class="meta-row"><span>27 likes</span><span class="meta-comments">10 comments</span><span>Share</span></div>
+        </article>
+        <article class="feed-card card-item" data-category="historia" data-cardid="card-9">
+          <div class="card-top">
+            <span class="chip">Historia</span>
+            <div class="card-actions-small"><button class="icon like" data-count="32">♡ <span class="count">32</span></button><button class="icon comment" data-count="11" data-comment>💬 <span class="count">11</span></button><button class="icon share" data-share>⤴</button></div>
+          </div>
+          <h2>Wazee walichapisha historia za kiswahili kwenye vichwa vya watoto.</h2>
+          <p>Hadithi za kale zimekuwa njia ya kuhifadhi tamaduni na mila kwa vizazi vijavyo.</p>
+          <div class="meta-row"><span>32 likes</span><span class="meta-comments">11 comments</span><span>Share</span></div>
+        </article>
+        <article class="feed-card card-item" data-category="historia" data-cardid="card-10">
+          <div class="card-top">
+            <span class="chip">Historia</span>
+            <div class="card-actions-small"><button class="icon like" data-count="10">♡ <span class="count">10</span></button><button class="icon comment" data-count="1" data-comment>💬 <span class="count">1</span></button><button class="icon share" data-share>⤴</button></div>
+          </div>
+          <h2>Msitu wa kihistoria umehifadhi mababu wa nasaba za Kiswahili.</h2>
+          <p>Watu waliweka alama za tamaduni na historia kupitia methali na nyimbo.</p>
+          <div class="meta-row"><span>10 likes</span><span class="meta-comments">1 comments</span><span>Share</span></div>
+        </article>
+        <article class="feed-card card-item" data-category="historia" data-cardid="card-11">
+          <div class="card-top">
+            <span class="chip">Historia</span>
+            <div class="card-actions-small"><button class="icon like" data-count="22">♡ <span class="count">22</span></button><button class="icon comment" data-count="5" data-comment>💬 <span class="count">5</span></button><button class="icon share" data-share>⤴</button></div>
+          </div>
+          <h2>Makumbusho ya kale yanahifadhi maneno ya wazee wa pwani.</h2>
+          <p>Hii ni sehemu ambayo watoto walifahamu methali za kuvutia kuelezea historia.</p>
+          <div class="meta-row"><span>22 likes</span><span class="meta-comments">5 comments</span><span>Share</span></div>
+        </article>
+        <article class="feed-card card-item" data-category="historia" data-cardid="card-12">
+          <div class="card-top">
+            <span class="chip">Historia</span>
+            <div class="card-actions-small"><button class="icon like" data-count="15">♡ <span class="count">15</span></button><button class="icon comment" data-count="4" data-comment>💬 <span class="count">4</span></button><button class="icon share" data-share>⤴</button></div>
+          </div>
+          <h2>Wanamazingira walihifadhi methali za safari ya biashara.</h2>
+          <p>Biashara ya kale iliruhusu misemo na matukio ya kihistoria kununuliwa.</p>
+          <div class="meta-row"><span>15 likes</span><span class="meta-comments">4 comments</span><span>Share</span></div>
+        </article>
+        <article class="feed-card card-item" data-category="historia" data-cardid="card-13">
+          <div class="card-top">
+            <span class="chip">Historia</span>
+            <div class="card-actions-small"><button class="icon like" data-count="19">♡ <span class="count">19</span></button><button class="icon comment" data-count="6" data-comment>💬 <span class="count">6</span></button><button class="icon share" data-share>⤴</button></div>
+          </div>
+          <h2>Nyimbo za wazee zilisimulia milenia ya historia ya Kiswahili.</h2>
+          <p>Ukweli uliotokezwa kwa wimbo unastahili kuendelea kushirikishwa.</p>
+          <div class="meta-row"><span>19 likes</span><span class="meta-comments">6 comments</span><span>Share</span></div>
+        </article>
+        <article class="feed-card card-item" data-category="historia" data-cardid="card-14">
+          <div class="card-top">
+            <span class="chip">Historia</span>
+            <div class="card-actions-small"><button class="icon like" data-count="13">♡ <span class="count">13</span></button><button class="icon comment" data-count="3" data-comment>💬 <span class="count">3</span></button><button class="icon share" data-share>⤴</button></div>
+          </div>
+          <h2>Zaidi ya vizazi, methali za mwanzo zinaendelea kuwa msaada.</h2>
+          <p>Historia ya Kiswahili inajengwa kupitia maneno yaliyochaguliwa kwa uangalifu.</p>
+          <div class="meta-row"><span>13 likes</span><span class="meta-comments">3 comments</span><span>Share</span></div>
+        </article>
+      </div>
+      <aside class="sidebar-panel">
+        <div class="panel-block">
+          <h3>Trending</h3>
+          <ul>
+            <li>Uislamu unayo neema</li>
+            <li>Misemo ya kwanza ya wazee</li>
+            <li>Hekima ya methali mpya</li>
+          </ul>
+        </div>
+        <div class="panel-block">
+          <h3>Jisajili kwa mafunzo</h3>
+          <p>Pata methali, misemo na nukuu mpya kila siku kwa barua pepe.</p>
+          <button class="btn btn-outline">Jisajili</button>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Swahili_web</strong>
+        <p>Kuendeleza utamaduni na hekima za Kiswahili kwa jamii zote.</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <a href="discover.html">Discover</a>
+        <a href="upload.html">Upload</a>
+        <a href="jifunze.html">Jifunze</a>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <div class="social-links"><a href="#">Twitter</a><a href="#">Facebook</a><a href="#">Instagram</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom container">© <span id="year"></span> Swahili_web. All rights reserved.</div>
+  </footer>
+
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <div class="modal" id="loginModal" aria-hidden="true">
+    <button class="modal-close" type="button" data-close>✕</button>
+    <h3>Login</h3>
+    <form id="loginForm">
+      <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
+      <label>Password<input type="password" name="password" placeholder="Password" required></label>
+      <button class="btn btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+  </div>
+
+  <div class="modal" id="registerModal" aria-hidden="true">
+    <button class="modal-close" type="button" data-close>✕</button>
+    <h3>Register</h3>
+    <form id="registerForm">
+      <label>Name<input type="text" name="name" placeholder="Your name" required></label>
+      <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
+      <label>Password<input type="password" name="password" placeholder="Password" required></label>
+      <button class="btn btn-primary btn-block" type="submit">Create account</button>
+    </form>
+  </div>
+
+  <div class="modal" id="commentModal" aria-hidden="true">
+    <button class="modal-close" type="button" data-close>✕</button>
+    <h3>Comments</h3>
+    <div class="comment-header"><strong id="commentCardTitle">Card title</strong></div>
+    <div class="comment-list" id="commentList"></div>
+    <form id="commentForm">
+      <label>Ongeza maoni<textarea name="comment" rows="4" placeholder="Andika maoni yako..." required></textarea></label>
+      <button class="btn btn-primary btn-block" type="submit">Tuma Maoni</button>
+    </form>
+  </div>
+
+  <script src="../javascript/scripte.js"></script>
+</body>
+</html>

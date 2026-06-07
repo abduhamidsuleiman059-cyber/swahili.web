@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="sw">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swahili_web — Upload</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/scripte.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="index.html">
+        <img src="../images/logo.png" alt="Swahili_web logo" class="brand-logo">
+        <span class="brand-text">Swahili_web</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="jifunze.html">Jifunze</a>
+        <a href="communit.html">Community</a>
+        <a href="upload.html" class="active">Upload</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn btn-ghost" id="loginBtn">Login</button>
+        <button class="btn btn-primary" id="registerBtn">Register</button>
+        <button class="mobile-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main container">
+    <section class="page-header">
+      <div>
+        <p class="eyebrow">Shiriki methali, misemo, nukuu na picha</p>
+        <h1>Upload</h1>
+        <p>Ongeza methali, misemo, nukuu za Kiislamu au picha za kielimu kwa jamii.</p>
+      </div>
+      <button class="btn btn-primary">Upload</button>
+    </section>
+
+    <section class="upload-panel">
+      <article class="upload-card upload-form-card">
+        <h3>Ongeza maudhui yako</h3>
+        <p>Shiriki methali, misemo, nukuu au habari za kielimu kwenye Swahili_web.</p>
+        <form id="uploadForm" novalidate>
+          <div class="form-group">
+            <label>Content Title</label>
+            <input type="text" id="uploadTitle" name="title" placeholder="Andika kichwa cha maudhui" required>
+          </div>
+          <div class="form-group">
+            <label>Category</label>
+            <select id="uploadCategory" name="category" required>
+              <option value="">Chagua kategoria</option>
+              <option value="methali">Methali</option>
+              <option value="misemo">Misemo</option>
+              <option value="nukuu">Nukuu za Kiislamu</option>
+              <option value="elimu">Elimu</option>
+              <option value="historia">Historia</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Content Text</label>
+            <textarea id="uploadText" name="text" rows="6" placeholder="Andika maudhui au tafsiri ya methali" required></textarea>
+          </div>
+          <div class="form-group">
+            <label>Image Upload (optional)</label>
+            <input type="file" id="uploadImage" name="image" accept="image/*">
+          </div>
+          <div class="form-message" id="uploadFormMessage" aria-live="polite"></div>
+          <button class="btn btn-primary btn-block" type="submit">Tuma Maudhui</button>
+        </form>
+      </article>
+    </section>
+
+    <section class="panel-block info-panel">
+      <h3>Mafunzo ya Upload</h3>
+      <p>Hakikisha kila mdundo una data sahihi, heshima kwa jamii, na uaminifu kwa tamaduni za Kiswahili.</p>
+      <ul>
+        <li>Usisambaze habari zisizo sahihi</li>
+        <li>Heshimu mila na dini</li>
+        <li>Tumia lugha safi na inayowaelimisha wengine</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Swahili_web</strong>
+        <p>Kuendeleza utamaduni na hekima za Kiswahili kwa jamii zote.</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <a href="discover.html">Discover</a>
+        <a href="jifunze.html">Jifunze</a>
+        <a href="communit.html">Community</a>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <div class="social-links"><a href="#">Twitter</a><a href="#">Facebook</a><a href="#">Instagram</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom container">© <span id="year"></span> Swahili_web. All rights reserved.</div>
+  </footer>
+
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <div class="modal" id="loginModal" aria-hidden="true">
+    <button class="modal-close" type="button" data-close>✕</button>
+    <h3>Login</h3>
+    <form id="loginForm">
+      <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
+      <label>Password<input type="password" name="password" placeholder="Password" required></label>
+      <button class="btn btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+  </div>
+
+  <div class="modal" id="registerModal" aria-hidden="true">
+    <button class="modal-close" type="button" data-close>✕</button>
+    <h3>Register</h3>
+    <form id="registerForm">
+      <label>Name<input type="text" name="name" placeholder="Your name" required></label>
+      <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
+      <label>Password<input type="password" name="password" placeholder="Password" required></label>
+      <button class="btn btn-primary btn-block" type="submit">Create account</button>
+    </form>
+  </div>
+
+  <script src="../javascript/scripte.js"></script>
+</body>
+</html>

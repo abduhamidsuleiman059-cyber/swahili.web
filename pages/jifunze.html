@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="sw">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swahili_web — Jifunze</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/scripte.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="index.html">
+        <img src="../images/logo.png" alt="Swahili_web logo" class="brand-logo">
+        <span class="brand-text">Swahili_web</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="jifunze.html" class="active">Jifunze</a>
+        <a href="communit.html">Community</a>
+        <a href="upload.html">Upload</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn btn-ghost" id="loginBtn">Login</button>
+        <button class="btn btn-primary" id="registerBtn">Register</button>
+        <button class="mobile-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main container">
+    <section class="page-header">
+      <div>
+        <p class="eyebrow">Jifunze Methali, Misemo na Elimu ya Kiswahili</p>
+        <h1>Jifunze</h1>
+        <p>Pata maarifa ya Kiswahili, tamaduni, na elimu ya Uislamu kupitia mafunzo ya michoro ya kisasa.</p>
+      </div>
+      <button class="btn btn-primary">Soma Zaidi</button>
+    </section>
+
+    <section class="content-grid two-column">
+      <aside class="sidebar-panel learning-menu">
+        <h3>Vidokezo</h3>
+        <button class="tag active" data-filter="all">Zote</button>
+        <button class="tag" data-filter="methali">Methali</button>
+        <button class="tag" data-filter="misemo">Misemo</button>
+        <button class="tag" data-filter="nukuu">Nukuu za Kiislamu</button>
+        <button class="tag" data-filter="elimu">Elimu ya Uislamu</button>
+        <button class="tag" data-filter="msamiati">Msamiati wa Kiswahili</button>
+        <button class="tag" data-filter="historia">Historia na Utamaduni</button>
+      </aside>
+
+      <div class="main-feed">
+        <div class="learning-grid">
+            <article class="learning-card card-item" data-category="methali">
+              <div class="top"><div class="learning-icon" aria-hidden>
+                <!-- Scroll/book icon -->
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 4h10v14H6z"/></svg>
+              </div><div class="title"><h3>Haraka Haraka Haina Baraka</h3></div></div>
+              <p>Methali hii inasema kwamba kufanya kazi kwa haraka bila kupanga vizuri kunaleta matata. Polepole na kwa makini ni njia ya mafanikio.</p>
+            </article>
+          <article class="learning-card card-item" data-category="methali">
+            <h3>Asiyesikia la mkuu huvunjika guu</h3>
+            <p>Methali inakumbusha umuhimu wa kusikiliza ushauri wa walio na tajriba na elimu. Wale ambao wanapuuza ahadi za walio na akili hulipata kwa gharama.</p>
+          </article>
+          <article class="learning-card card-item" data-category="methali">
+            <h3>Mtaka cha mvunguni sharti ainame</h3>
+            <p>Methali hii inafundisha kwamba kila kitu kina bei yake. Ikiwa unataka kitu, lazima ujitoleeze au ufanye juhudi za kutosha kupata hilo kitu.</p>
+          </article>
+          <article class="learning-card card-item" data-category="misemo">
+            <div class="top"><div class="learning-icon" aria-hidden>
+              <!-- Speech bubble icon -->
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 6h-18v9h4v4l5-4h9z"/></svg>
+            </div><div class="title"><h3>Ujasiri ni njaa ya moyo</h3></div></div>
+            <p>Misemo hii inasema kwamba ujasiri ni sifa ya mtu ambaye ana msomeko mkubwa na tabia njema. Ni tabia yenye thamani kubwa katika jamii.</p>
+          </article>
+          <article class="learning-card card-item" data-category="misemo">
+            <h3>Samaki mkunje angali mbichi</h3>
+            <p>Misemo inakumbusha kuwa ni muhimu kuwa na hofu na tahadhari kabla ya kujiingia katika mambo magumu au hatari.</p>
+          </article>
+          <article class="learning-card card-item" data-category="misemo">
+            <h3>Ukitaka kamasi, nesema msimamo</h3>
+            <p>Misemo inasema kwamba kwa uwazi na matangazo madogo tunaweza kupata matokeo mazuri. Busara na mantiki ni muhimu.</p>
+          </article>
+          <article class="learning-card card-item" data-category="nukuu">
+            <div class="top"><div class="learning-icon" aria-hidden>
+              <!-- Mosque/crescent icon -->
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 100 14 7 7 0 000-14z"/></svg>
+            </div><div class="title"><h3>Fanya kila mema kwa moyo safi</h3></div></div>
+            <p>Nukuu hii ya Kiislamu inakumbusha kwamba kila kitu tunachofanya tutakaudhimini Mungu. Moyo safi na nia njema ni msingi.</p>
+          </article>
+          <article class="learning-card card-item" data-category="nukuu">
+            <h3>Hakuna nguvu isipokuwa kwa Mwenyezi Mungu</h3>
+            <p>Nukuu inasema kwamba nguvu ya kupigania maslahi yote inakamatoka kwa Mungu. Ni dhikr ya kukamatia na kujuta kwa Mungu.</p>
+          </article>
+          <article class="learning-card card-item" data-category="nukuu">
+            <h3>Subiri kwa subira</h3>
+            <p>Nukuu inakufundisha kuwa uvumilivu ni njia ya kufanikia malengo. Hata kama ni vigumu, kujitumikia kwa hekima kunaleta baraka.</p>
+          </article>
+          <article class="learning-card card-item" data-category="elimu">
+            <div class="top"><div class="learning-icon" aria-hidden>
+              <!-- Graduation cap icon -->
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l8 4-8 4-8-4 8-4zM4 10v6l8 4 8-4v-6"/></svg>
+            </div><div class="title"><h3>Elimu ya Uislamu</h3></div></div>
+            <p>Nguzo za imani katika Uislamu ni muhimu kwa kila Muislamu. Elimu hii inasaidia kuelewa msingi wa dini na maisha ya heshima.</p>
+          </article>
+          <article class="learning-card card-item" data-category="elimu">
+            <h3>Nguzo za Imani Sita</h3>
+            <p>Imani kwa Mungu, malaika, kitabu, manabii, Siku ya Kiama na Qadr ni nguzo sita za imani katika Uislamu.</p>
+          </article>
+          <article class="learning-card card-item" data-category="elimu">
+            <h3>Adabu za Kiislamu</h3>
+            <p>Tabia njema, heshima, wazi, na mahaba kwa jibu ni sifa za Muislamu wa kweli. Adabu hizi huwa na thamani kubwa.</p>
+          </article>
+          <article class="learning-card card-item" data-category="msamiati">
+            <h3>Msamiati wa Kiswahili</h3>
+            <p>Lugha ya Kiswahili ina msamiati matukufu yenye maana makubwa. Maneno haya yanawakilisha tamaduni na historia ya taifa.</p>
+          </article>
+          <article class="learning-card card-item" data-category="msamiati">
+            <h3>Maneno ya Kutukuza</h3>
+            <p>Maneno kama "Baba", "Mama", "Rafiki", "Wageni" yana maana makubwa ya maadhimisho na malalamiko kwa kiswahili.</p>
+          </article>
+          <article class="learning-card card-item" data-category="historia">
+            <h3>Historia ya Utamaduni</h3>
+            <p>Tamaduni ya Pwani ina historia ndefu yenye ushawishi wa Warabuni, waTanzania, na mataifa mengine ya Baharini.</p>
+          </article>
+          <article class="learning-card card-item" data-category="historia">
+            <h3>Mazoea ya Kiswahili</h3>
+            <p>Mazoea ya jadi kama ndoto, sherehe na msiba yanaonyesha utata wa tamaduni ya Kiswahili na majibu ya jamii.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Swahili_web</strong>
+        <p>Kuendeleza utamaduni na hekima za Kiswahili kwa jamii zote.</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <a href="discover.html">Discover</a>
+        <a href="upload.html">Upload</a>
+        <a href="communit.html">Community</a>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <div class="social-links"><a href="#">Twitter</a><a href="#">Facebook</a><a href="#">Instagram</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom container">© <span id="year"></span> Swahili_web. All rights reserved.</div>
+  </footer>
+
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <div class="modal" id="loginModal" aria-hidden="true">
+    <button class="modal-close" type="button" data-close>✕</button>
+    <h3>Login</h3>
+    <form id="loginForm">
+      <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
+      <label>Password<input type="password" name="password" placeholder="Password" required></label>
+      <button class="btn btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+  </div>
+
+  <div class="modal" id="registerModal" aria-hidden="true">
+    <button class="modal-close" type="button" data-close>✕</button>
+    <h3>Register</h3>
+    <form id="registerForm">
+      <label>Name<input type="text" name="name" placeholder="Your name" required></label>
+      <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
+      <label>Password<input type="password" name="password" placeholder="Password" required></label>
+      <button class="btn btn-primary btn-block" type="submit">Create account</button>
+    </form>
+  </div>
+
+  <script src="../javascript/scripte.js"></script>
+</body>
+</html>

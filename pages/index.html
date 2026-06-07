@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="sw">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swahili_web — Karibu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/scripte.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="index.html">
+        <img src="../images/logo.png" alt="Swahili_web logo" class="brand-logo">
+        <span class="brand-text">Swahili_web</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="jifunze.html">Jifunze</a>
+        <a href="communit.html">Community</a>
+        <a href="upload.html">Upload</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn btn-ghost" id="loginBtn">Login</button>
+        <button class="btn btn-primary" id="registerBtn">Register</button>
+        <button class="mobile-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-content container">
+        <div>
+          <span class="eyebrow">Swahili culture, quotes, wisdom na kumbukumbu za Kiislamu</span>
+          <h1>Karibu <span>Swahili_web</span></h1>
+          <p>Jifunze Methali, Misemo, Elimu ya Kiswahili na Vidokezo vya Uislamu kupitia jumuiya ya wataalamu na wanajamii.</p>
+          <div class="hero-buttons">
+            <a href="discover.html" class="btn btn-primary btn-lg">Anza Sasa</a>
+            <button type="button" class="btn btn-outline btn-lg" data-open-modal="registerModal">Jisajili</button>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="panel-title">Methali za Siku</div>
+          <div class="panel-card">
+            <p>“Asiyesikia la mkuu huvunjika guu.”</p>
+            <span>Hekima ya Kiswahili</span>
+          </div>
+          <div class="panel-cards">
+            <div class="mini-card">
+              <strong>Methali</strong>
+              <p>Maneno ya hekima yaliyojengwa katika utamaduni.</p>
+            </div>
+            <div class="mini-card">
+              <strong>Misemo</strong>
+              <p>Maneno mafupi yenye maana kubwa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="overview container">
+      <div class="section-heading">
+        <h2>Methali, Misemo na Nukuu</h2>
+        <p>Angalia unachoweza kusoma, kugundua au kushiriki kwa sasa.</p>
+      </div>
+      <div class="overview-grid">
+        <article class="stat-card">
+          <span class="stat-label">Methali</span>
+          <p>“Haraka haraka haina baraka.”</p>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Misemo</span>
+          <p>“Samaki mkunje angali mbichi.”</p>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Nukuu za Kiislamu</span>
+          <p>“Acha mazuri hayo uepuke maneno ya uongo.”</p>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Trending Posts</span>
+          <p>Jifunze methali mpya, misemo maarufu na ujumbe wa jamii.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="featured-quotes container">
+      <div class="section-heading">
+        <h2>Vikundi vya Kategooria</h2>
+        <p>Chagua methali, misemo, nukuu za kiislamu au elimu kwa urahisi.</p>
+      </div>
+      <div class="quote-grid">
+        <article class="quote-card">
+          <h3>Methali</h3>
+          <p>“Mtaka cha mvunguni sharti ainame.”</p>
+        </article>
+        <article class="quote-card">
+          <h3>Misemo</h3>
+          <p>“Ujasiri ni njaa ya moyo.”</p>
+        </article>
+        <article class="quote-card">
+          <h3>Nukuu</h3>
+          <p>“Hakuna nguvu isipokuwa kwa Mwenyezi Mungu.”</p>
+        </article>
+        <article class="quote-card">
+          <h3>Uislamu</h3>
+          <p>“Fanya mema kwa moyo safi na subiri kwa subira.”</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Swahili_web</strong>
+        <p>Kuendeleza utamaduni na hekima za Kiswahili kwa jamii zote.</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <a href="discover.html">Discover</a>
+        <a href="upload.html">Upload</a>
+        <a href="jifunze.html">Jifunze</a>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <div class="social-links"><a href="#">Twitter</a><a href="#">Facebook</a><a href="#">Instagram</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom container">© <span id="year"></span> Swahili_web. All rights reserved.</div>
+  </footer>
+
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <div class="modal" id="loginModal" aria-hidden="true">
+    <button class="modal-close" type="button" data-close>✕</button>
+    <h3>Login</h3>
+    <form id="loginForm">
+      <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
+      <label>Password<input type="password" name="password" placeholder="Password" required></label>
+      <button class="btn btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+  </div>
+
+  <div class="modal" id="registerModal" aria-hidden="true">
+    <button class="modal-close" type="button" data-close>✕</button>
+    <h3>Register</h3>
+    <form id="registerForm">
+      <label>Name<input type="text" name="name" placeholder="Your name" required></label>
+      <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
+      <label>Password<input type="password" name="password" placeholder="Password" required></label>
+      <button class="btn btn-primary btn-block" type="submit">Create account</button>
+    </form>
+  </div>
+
+  <script src="../javascript/scripte.js"></script>
+</body>
+</html>
